@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do João</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="login(); return false;">
+        <h3>Cadastro</h3>
+       <label for="Login">Login</label>
+        <input type="text" placeholder="Login" id="Login" required>
+       <label for="Senha">Senha</label>
+        <input type="password" placeholder="Senha" id="Senha" required>
+      <label for="Email">Email</label>
+       <input type="email" placeholder="Email" id="Email" required>
+      <label for="Telefone">Telefone</label>
+       <input type="tel" placeholder="Telefone" id="Telefone" required>
+
+      <input type="submit" value="Entrar">
+  </form>
+    <script>
+        function login() {
+            const login = document.getElementById('Login').value.trim();
+            const senha = document.getElementById('Senha').value.trim();
+            const email = document.getElementById('Email').value.trim();
+            const telefone = document.getElementById('Telefone').value.trim();
+
+            const validLogin = "Joao";
+            const validSenha = "29052009";
+            const validEmail = "joao.anhaia.santos@escola.pr.gov.br";
+            const validTelefone = "123";
+
+            if (login === validLogin && senha === validSenha && email === validEmail && telefone === validTelefone) {
+                alert('Sucesso!');
+                location.href = "home.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+</body>
+</html>
