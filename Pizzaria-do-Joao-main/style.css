@@ -10,13 +10,14 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: goldenrod;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     height: 100vh;
 }
 
-/* Estilo do formulário */
-form {
+/*Estilo do formulário*/
+.login {
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -31,7 +32,7 @@ h3 {
     color: #333;
 }
 
-/* Estilo dos labels */
+/*Estilo dos labels*/
 label {
     display: block;
     margin-bottom: 5px;
@@ -40,8 +41,11 @@ label {
     color: #555;
 }
 
-/* Estilo dos campos de entrada */
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+/*Estilo dos campos de entrada*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -50,12 +54,15 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     font-size: 16px;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
     outline: none;
     border-color: #4CAF50;
 }
 
-/* Estilo do botão de envio */
+/*Estilo do botão de envio*/
 input[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -71,7 +78,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Responsividade */
+/*Responsividade*/
 @media screen and (max-width: 400px) {
     form {
         width: 90%;
@@ -81,11 +88,27 @@ input[type="submit"]:hover {
         font-size: 20px;
     }
 
-    input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
         font-size: 14px;
     }
 
     input[type="submit"] {
         font-size: 14px;
     }
+}
+
+/*Home.html*/
+.navbar {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    align-items: center;
+    padding: 1rem;
 }
